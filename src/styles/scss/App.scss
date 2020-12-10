@@ -1,0 +1,164 @@
+$black : #121214;
+$purple : #6200ea;
+$green : #04D361;
+$text : #E1E1E6;
+$red : #f44336;
+$white : #ffffff;
+
+
+.Box {
+    width: 100%;
+    //background-color: rgba(10,23,55,0.7);
+    position: absolute;
+    top: 10%;
+    margin-top: -25px;
+    padding-bottom: 30px;
+}
+
+.App {
+
+    .Bar {
+        width: 100%;
+        height: 2px;
+        background: $green;
+        margin-bottom: 20px;
+        border: none;
+    }
+
+    .Card {
+        background-color: #202024;
+
+        .Content {
+            padding: 40px 40px 0px 40px;
+        }
+    }
+
+    .Title {
+        font-weight: 700;
+        font-size: 26px;
+        color: $text;
+
+        span {
+            color: $green;
+            font-size: 20px;
+
+            @media (min-width:600px) {
+                font-size: 30px,
+            }
+        }
+
+        @media (min-width:600px) {
+            font-size: 38px,
+        }
+    }
+
+    .SubTitle {
+        padding-bottom: 20px;
+        font-size: 14px;
+        color: $text;
+
+        span {
+            color: $green;
+            font-weight: 600;
+        }
+
+        @media (min-width:600px) {
+            font-size: 16px,
+        }
+    }
+
+    .icon {
+        color: $purple;
+    }
+
+    .button {
+        background: $purple;
+        color: $white;
+        width: 180px;
+        border: none;
+
+        span {
+            font-weight: 700;
+        }
+
+        &:hover {
+            background: #7c4dff;
+            color: white;
+        }
+    }
+
+    .button:focus {
+        color: #fff;
+        background: $purple;
+    }
+
+    .Input {
+        background: $black;
+        border: none;
+        color: $white;
+    }
+}
+
+.ListItem {
+    text-align: center;
+    display: inline;
+
+    @media (min-width:600px) {
+        text-align: left;
+    }
+}
+
+.col {
+    margin-bottom: 15px;
+    width: 100%;
+    vertical-align: middle;
+
+    @media (min-width:600px) {
+        width: 30%;
+    }
+
+    .IconBox {
+        vertical-align: middle;
+        display: inline;
+
+        .ListIcon {
+            color: $purple;
+            margin-left: 10px;
+            font-size: 24px;
+            display: inline;
+        }
+    }
+
+    p {
+        display: block;
+        font-size: 15px;
+        font-weight: 600;
+        color: $text;
+        margin-left: 0;
+
+        @media (min-width:600px) {
+            display: inline;
+            margin-left: 10px;
+        }
+    }
+}
+
+.RowDelete {
+
+    width: 100%;
+    vertical-align: middle;
+
+    .Delete {
+        color: $text;
+        font-size: 26px;
+    }
+
+    .Delete:hover {
+        color: $red;
+    }
+
+    @media (min-width:600px) {
+        width: 10%;
+        text-align: right;
+    }
+}
